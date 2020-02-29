@@ -19,7 +19,7 @@
         },
         {
             "guid": "{105eed3f-7bab-4ec2-be85-48aedc1ff29f}",
-            "commandline": "powershell.exe -noe -c \"&{$vsPath = &'C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\vswhere.exe' -property installationpath; ipmo (Join-Path $vsPath 'Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll'); Enter-VsDevShell -VsInstallPath $vsPath -SkipAutomaticLocation}\"",
+            "commandline": "powershell.exe -noe -c \"&{$vsPath = &'C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\vswhere.exe' -property installationpath; ipmo (Join-Path $vsPath 'Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll'); Enter-VsDevShell -VsInstallPath $vsPath -SkipAutomaticLocation}; cd $home\"",
             "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
             "name": "VS PowerShell",
             "hidden": false,
